@@ -1,7 +1,7 @@
 \RequirePackage[l2tabu, orthodox]{nag} %编译时，给出过时命令和不规范使用警告。
 
-\documentclass[UTF8, fontset = none, a4paper, oneside, % twoside, openany,
-zihao = -4, scheme=chinese, no-math]{ctexbook}
+\documentclass[UTF8, fontset = none, a4paper, twoside, openany, zihao = -4,
+scheme=chinese, no-math]{ctexbook}
 
 \setCJKmainfont
 [
@@ -71,6 +71,8 @@ zihao = -4, scheme=chinese, no-math]{ctexbook}
 
 
 \usepackage{etoolbox}
+\newcommand{\capsource}[1]{\vspace{-8pt} \caption*{\mdseries 图表来源: {#1}} } % 自定义图表来源
+                                % 命令，vspace可酌情调整。
 % % 脚注按页编号
 
 \usepackage{pifont}
@@ -249,9 +251,8 @@ zihao = -4, scheme=chinese, no-math]{ctexbook}
 % 定义所有的图片文件在 figures 子目录下
 \graphicspath{{figures/}}
 % 
+
 % dedication environment
-\newcommand{\lmrsl}{\fontspec{lmromanslant12-regular.otf}}
-\newcommand{\lmrit}{\fontspec{lmroman12-italic.otf}}
 \newenvironment{dedication}
 {\clearpage           % we want a new page      
   \large

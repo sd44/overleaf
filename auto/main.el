@@ -2,7 +2,7 @@
  "main"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
-                     '(("ctexbook" "UTF8" "fontset=none" "a4paper" "oneside" "zihao=-4" "scheme=chinese" "no-math")))
+                     '(("ctexbook" "UTF8" "fontset=none" "a4paper" "twoside" "openany" "zihao=-4" "scheme=chinese" "no-math")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("nag" "l2tabu" "orthodox") ("unicode-math" "math-style=ISO" "bold-style=ISO") ("biblatex" "backend=biber" "style=gb7714-2015" "backref=true") ("footmisc" "perpage" "hang" "symbol*") ("xcolor" "dvipsnames") ("todonotes" "colorinlistoftodos" "prependcaption" "textsize=small")))
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
@@ -62,12 +62,11 @@
    (TeX-add-symbols
     '("dingphotov" 3)
     '("dingphotoh" 6)
+    '("capsource" 1)
     "songti"
     "heiti"
     "fangsong"
     "kaishu"
-    "lmrsl"
-    "lmrit"
     "UrlFont"
     "oldding"
     "rnum"

@@ -1,0 +1,19 @@
+%%
+%% ---------------------------------------------------------------
+%% biblatex-gb7714-2015 --- A biblatex implementation of the
+%% GBT7714-2015  bibliography style, GBK supported file
+%% Maintained by huzhenzhen
+%% E-mail: hzzmail@163.com
+%% Released under the LaTeX Project Public License v1.3c or later
+%% ---------------------------------------------------------------
+%%
+
+    \def\str@bibliography{²Î¿¼ÎÄÏ×}
+    \def\str@references{²Î¿¼ÎÄÏ×}
+    \def\str@bytranslator{Òë}
+    \def\str@andotherscn{µÈ}
+    \def\str@backrefpage{ÒýÓÃÒ³}
+    \def\str@backrefpages{ÒýÓÃÒ³}
+    \def\str@noaddress{³ö°æµØ²»Ïê}
+    \def\str@nopublisher{³ö°æÕß²»Ïê}
+    \def\str@edition{°æ}

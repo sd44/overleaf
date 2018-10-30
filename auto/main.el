@@ -5,12 +5,12 @@
                      '(("ctexbook" "UTF8" "fontset=none" "a4paper" "twoside" "openany" "zihao=-4" "scheme=chinese" "no-math")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("nag" "l2tabu" "orthodox") ("unicode-math" "math-style=ISO" "bold-style=ISO") ("biblatex" "backend=biber" "style=gb7714-2015" "backref=true") ("footmisc" "perpage" "hang" "symbol*") ("xcolor" "dvipsnames") ("todonotes" "colorinlistoftodos" "prependcaption" "textsize=small")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"

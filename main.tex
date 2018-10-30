@@ -254,12 +254,13 @@ scheme=chinese, no-math]{ctexbook}
 
 % dedication environment
 \newenvironment{dedication}
-{\clearpage           % we want a new page      
+{
+  \clearpage
+  \thispagestyle{empty}
+  \vspace*{\stretch{1.5}}% some space at the top 
   \large
-  \thispagestyle{empty}% no header and footer
-  \vspace*{\stretch{1}}% some space at the top
-  \lmrsl             % the text is Latin Modern in slshape
   % \raggedleft          % flush to the right margin
+  \par % end the paragraph
 }
 {\par % end the paragraph
   \vspace{\stretch{3}} % space at bottom is three times that at the top

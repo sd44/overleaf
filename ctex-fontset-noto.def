@@ -49,7 +49,7 @@
       \setCJKmainfont
       [
       BoldFont = NotoSerifCJK-Bold.ttc ,
-      ItalicFont = FZXKTJ.otf,
+      ItalicFont = FZXKTK.TTF,
       BoldItalicFont = FZCKJW.ttf
       ] {NotoSerifCJK-Regular.ttc}
       \setCJKsansfont
@@ -66,8 +66,7 @@
       \setCJKfamilyfont { zhkai }
       [
       BoldFont = FZCKJW.ttf
-      ] {FZXKTJ.otf}
-      \ctex_punct_set:n { noto }
+      ] {FZXKTJ.TTF}
       \ctex_punct_map_family:nn { \CJKrmdefault } { zhsong }
       \ctex_punct_map_family:nn { \CJKsfdefault } { zhhei }
       \ctex_punct_map_family:nn { \CJKttdefault } { zhfs }
@@ -90,7 +89,7 @@
   {
     \ctex_set_upfonts:nnnnnnn
     {NotoSerifCJK-Regular.ttc} {NotoSerifCJK-Bold.ttc}
-    {FZXKTJ.otf} {FZCJKW.ttf}
+    {FZXKTK.TTF} {FZCJKW.ttf}
     {NotoSansCJK-Regular.ttc} {NotoSansCJK-Bold.ttc}
     {FZFSK.TTF}
     \ctex_set_upfamily:nnn { zhsong } { upzhserif } { upzhserifb }

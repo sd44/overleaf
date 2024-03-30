@@ -22,7 +22,7 @@
   }%
 }
 
-\LoadClass[UTF8, fontset = noto, a4paper, twoside, zihao =
+\LoadClass[UTF8, a4paper, twoside, zihao =
 -4, scheme=chinese, heading = true]{ctexbook}
 
 \ctexset{%

@@ -49,7 +49,7 @@
       \setCJKmainfont
       [
       BoldFont = NotoSerifCJK-Bold.ttc ,
-      ItalicFont = FZXKTJ.otf,
+      ItalicFont = FZXKTK.TTF,
       BoldItalicFont = FZCKJW.ttf
       ] {NotoSerifCJK-Regular.ttc}
       \setCJKsansfont

@@ -1,13 +1,15 @@
 # Makefile for Dingjiw
 
 # Compiling method: latexmk/xelatex/pdflatex
-METHOD = latexmk
+# JOBNAME="个人社会学视角下的世界与中国—一个平民的独白（未完成）"
+JOBNAME="main"
+METHOD = latexmk -jobname=$(JOBNAME)
 # Basename of thesis
 DINGJIAMAIN = main
 # Basename of shuji
 SHUJIMAIN = shuji
-TEMPFILE := $(shell find . -type f -name "*.aux" -o -type f -name "*.log") 
-TEMPDIR := $(shell find . -maxdepth 4 -type d -name "auto") 
+TEMPFILE := $(shell find . -type f -name "*.aux" -o -type f -name "*.log" -o -name "_region*")
+TEMPDIR := $(shell find . -maxdepth 4 -type d -name "auto")
 DINGJIACONTENTS=$(DINGJIAMAIN).tex data/*.tex $(FIGURES)
 DINGJIACLEAN= $(TEMPFILE) $(TEMPDIR) svg-* tmpoutput/
 # NOTE: update this to reflect your local file types.
@@ -17,20 +19,18 @@ FIGURES=$(wildcard figures/*.eps figures/*.pdf figures/*.jpg figures/*.png)
 RM = rm -f
 OPEN = okular
 
-.PHONY: all doc clean distclean 
+.PHONY: all doc clean distclean
 
-all: distclean doc 
+all: doc
 
-doc: $(DINGJIAMAIN).pdf
-
-$(DINGJIAMAIN).pdf: $(DINGJIAMAIN).tex
+doc: 	$(DINGJIAMAIN).tex
 	$(METHOD)  $(DINGJIAMAIN)
 
 clean:
-	latexmk -C 
+	 $(METHOD) -c $(JOBNAME).aux
 	-@$(RM) *~
 	-@$(RM) -rf $(DINGJIACLEAN)
 
 distclean: clean
-	-@$(RM) $(DINGJIAMAIN).pdf
+	-@$(RM) $(JOBNAME).pdf
 

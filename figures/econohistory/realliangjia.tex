@@ -1,0 +1,112 @@
+\begin{figure}[!ht]
+  \centering
+
+  \begin{tikzpicture}[baseline]
+    \begin{axis}[width=15cm,height=6cm,% no markers,
+      every axis/.append style={line width=.8pt},
+      cycle list={
+        {blue,mark=*},
+        {red,mark=square},
+        {orange,mark=o},
+        % {loosely dotted,mark=+},
+        {green!90!black,mark=otimes*,
+          mark options={fill=brown!40},
+        }% <-- don’t add a comma here
+      },
+      xtick=data,
+      % xticklabels={1975,1980,...,2020},
+      xmin=1979,
+      xmax=2018,
+      xticklabel style= {/pgf/number format/1000 sep=,xshift=1ex, rotate=60,anchor=east,},
+      ytick distance=0.5,
+      % ytick=data,
+      % yticklabels={0.1, 0.2, 0.3, 0.4, 0.5, 0.6},
+      % extra y ticks={0.1,0.2,0.3,0.6},
+      % extra y tick style={grid=major},
+      % extra y tick labels={0.1, 0.2, 0.3, 0.6},
+      xlabel=年份,
+      ylabel=产量（亿吨）,
+      % grid=major,
+      ymajorgrids,
+      ]
+      % \addplot+ [point meta=explicit symbolic, every node near coord/.append style={color=red}, nodes near coords,]
+      \addplot table [x=totalyear, y=total, col sep=comma] {realliangjia.csv};
+    \end{axis}
+  \end{tikzpicture}
+  \vspace{-14pt}
+  \caption{\label{fig:liangchanliang}1980--2017年粮食产量}
+  \capsource{资料来源：国家统计局，《中国统计摘要--2018）》}
+  \bigskip\bigskip
+
+  \begin{tikzpicture}[baseline]
+    \begin{axis}[width=15cm,height=6cm,% no markers,
+      every axis/.append style={line width=.8pt},
+      cycle list={
+        {blue,mark=*},
+        {red,mark=square},
+        {orange,mark=o},
+        % {loosely dotted,mark=+},
+        {green!90!black,mark=otimes*,
+          mark options={fill=brown!40},
+        }% <-- don’t add a comma here
+      },
+      xtick=data,
+      % xticklabels={1975,1980,...,2020},
+      xmin=1979,
+      xmax=2018,
+      xticklabel style= {/pgf/number format/1000 sep=,xshift=1ex, rotate=60,anchor=east,},
+      % ytick=data,
+      % yticklabels={0.1, 0.2, 0.3, 0.4, 0.5, 0.6},
+      % extra y ticks={0.1,0.2,0.3,0.6},
+      % extra y tick style={grid=major},
+      % extra y tick labels={0.1, 0.2, 0.3, 0.6},
+      xlabel=年份,
+      ylabel=增长率（\%）,
+      % grid=major,
+      ymajorgrids,
+      ]
+      % \addplot+ [point meta=explicit symbolic, every node near coord/.append style={color=red}, nodes near coords,]
+      \addplot table [x=totalyear, y=totalpercent, col sep=comma] {realliangjia.csv};
+    \end{axis}
+  \end{tikzpicture}
+  \vspace{-14pt}
+  \caption{\label{fig:liangzengzhang}1980--2017年粮食产量增长率（较上一年）}
+  \capsource{资料来源：国家统计局，《中国统计摘要--2018）》}
+  \bigskip \bigskip
+
+  \begin{tikzpicture}[baseline]
+    \begin{axis}[width=13cm,height=6cm,% no markers,
+      every axis/.append style={line width=.8pt},
+      cycle list={
+        {blue,mark=*},
+        {red,mark=square},
+        {orange,mark=o},
+        % {loosely dotted,mark=+},
+        {green!90!black,mark=otimes*,
+          mark options={fill=brown!40},
+        }% <-- don’t add a comma here
+      },
+      xtick=data,
+      % xticklabels={1975,1980,...,2020},
+      xticklabel style= {/pgf/number format/1000 sep=,xshift=1ex, rotate=60,anchor=east,},
+      ymin=0.3,
+      ymax=0.6,
+      ytick distance=0.05,
+      % ytick=data,
+      % yticklabels={0.1, 0.2, 0.3, 0.4, 0.5, 0.6},
+      % extra y ticks={0.1,0.2,0.3,0.6},
+      % extra y tick style={grid=major},
+      % extra y tick labels={0.1, 0.2, 0.3, 0.6},
+      xlabel=年份,
+      ylabel=价格（元/公斤）,
+      % grid=major,
+      ymajorgrids,
+      ]
+      % \addplot+ [point meta=explicit symbolic, every node near coord/.append style={color=red}, nodes near coords,]
+      \addplot table [x=x, y=y, col sep=comma] {realliangjia.csv};
+    \end{axis}
+  \end{tikzpicture}
+  \vspace{-14pt}
+  \caption{\label{fig:liangjia}1980--1998年粮食市场真实价格（1978年不变价格）}
+  \capsource{资料来源：卢锋，《三次粮食过剩（1984--1998）》}
+\end{figure}

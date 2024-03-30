@@ -1,0 +1,91 @@
+\begin{figure}[ht]
+\begin{tikzpicture}[baseline]
+  \begin{axis}[width=13cm,height=6cm,% no markers,
+    every axis/.append style={line width=.8pt},
+    cycle list={
+      {blue,mark=*},
+      {red,mark=square},
+      {orange,mark=o},
+      % {loosely dotted,mark=+},
+      {green!90!black,mark=otimes*,
+        mark options={fill=brown!40},
+      }% <-- don’t add a comma here
+    },
+    % grid=major,
+    ymajorgrids,
+    % xlabel=年份,
+    ylabel=价格（元/公斤）,
+    legend entries={大米定购价, 大米议购价,大米市场价},
+    legend pos=north west,
+    xtick=data,
+    % xtick={1975,1980,...,2020},
+    xticklabel style= {/pgf/number format/1000 sep=,rotate=60,anchor=east},
+    ]
+\addplot table [x=x, y=miding, col sep=comma] {liangjia.csv};
+\addplot table [x=x, y=miyi, col sep=comma] {liangjia.csv};
+\addplot table [x=x, y=mishi, col sep=comma] {liangjia.csv};
+\end{axis}
+\end{tikzpicture}
+
+\bigskip
+
+\begin{tikzpicture}[baseline]
+  \begin{axis}[width=13cm,height=6cm,% no markers,
+    every axis/.append style={line width=.8pt},
+    cycle list={
+      {blue,mark=*},
+      {red,mark=square},
+      {orange,mark=o},
+      % {loosely dotted,mark=+},
+      {green!90!black,mark=otimes*,
+        mark options={fill=brown!40},
+      }% <-- don’t add a comma here
+    },
+    % grid=major,
+    ymajorgrids,
+    % xlabel=年份,
+    ylabel=价格（元/公斤）,
+    legend entries={小麦定购价, 小麦议购价,小麦市场价},
+    legend pos=north west,
+    xtick=data,
+    % xtick={1975,1980,...,2020},
+    xticklabel style= {/pgf/number format/1000 sep=,rotate=60,anchor=east},
+    ]
+\addplot table [x=x, y=maiding, col sep=comma] {liangjia.csv};
+\addplot table [x=x, y=maiyi, col sep=comma] {liangjia.csv};
+\addplot table [x=x, y=maishi, col sep=comma] {liangjia.csv};
+\end{axis}
+\end{tikzpicture}
+
+\bigskip
+
+\begin{tikzpicture}[baseline]
+  \begin{axis}[width=13cm,height=6cm,% no markers,
+    every axis/.append style={line width=.8pt},
+    cycle list={
+      {blue,mark=*},
+      {red,mark=square},
+      {orange,mark=o},
+      % {loosely dotted,mark=+},
+      {green!90!black,mark=otimes*,
+        mark options={fill=brown!40},
+      }% <-- don’t add a comma here
+    },
+    % grid=major,
+    ymajorgrids,
+    xlabel=年份,
+    ylabel=价格（元/公斤）,
+    legend entries={玉米定购价, 玉米议购价,玉米市场价},
+    legend pos=north west,
+    xtick=data,
+    % xtick={1975,1980,...,2020},
+    xticklabel style= {/pgf/number format/1000 sep=,rotate=60,anchor=east},
+    ]
+\addplot table [x=x, y=yuding, col sep=comma] {liangjia.csv};
+\addplot table [x=x, y=yuyi, col sep=comma] {liangjia.csv};
+\addplot table [x=x, y=yushi, col sep=comma] {liangjia.csv};
+\end{axis}
+\end{tikzpicture}
+\caption{\label{liangjia}1985--1998年主粮定购价、议购价、市场价曲线图}
+\capsource{资料来源：王小鲁，《中国粮食市场的波动》}
+\end{figure}

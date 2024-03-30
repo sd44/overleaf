@@ -1,0 +1,264 @@
+\RequirePackage[l2tabu, orthodox]{nag} %编译时，给出过时命令和不规范使用警告。
+
+\documentclass[UTF8, fontset = sourcesans, a4paper, oneside, zihao =
+-4, scheme=chinese, no-math]{ctexbook}
+
+\XeTeXgenerateactualtext=1
+
+\usepackage[backend=biber,style=gb7714-2015,backref=true]{biblatex}
+\addbibresource[location=local]{ref/refs.bib}
+
+\usepackage{verse}
+
+\ctexset{%
+  abstractname = {摘\quad 要},  % book类没有摘要
+  bibname = {参考文献},
+  today = {big}
+}
+\xeCJKsetup{CJKmath=true}
+
+\newcommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% 插图所需的宏包
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+\else\Gin@nat@width\fi}
+\makeatother
+\let\Oldincludegraphics\includegraphics
+\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
+
+
+\usepackage{caption}
+\captionsetup{font=small, labelfont=bf}
+
+\usepackage{amsmath, amssymb, xfrac}
+\usepackage[math-style=ISO, bold-style=ISO]{unicode-math} %注意，unicode-math与被其认为过时的bm包不兼容，不要\usepackage{bm}
+
+
+\setmainfont[Scale=1.15]{Libertinus Serif}
+\setmathfont[AutoFakeBold,Scale = 1.18]{Libertinus Math}  % 因Libertinus目前的数学字体暂还没
+                                % 有粗体，这里设置为允许伪粗体渲染。
+
+\setsansfont{TeX Gyre Heros}
+\defaultfontfeatures{Scale=MatchLowercase}
+
+\usepackage{etoolbox}
+\usepackage{zref-perpage}
+\zmakeperpage{footnote}
+
+% % for number of footnote 
+% 作者：刘海洋
+% 链接：https://www.zhihu.com/question/53030087/answer/136097745
+% 来源：知乎
+% 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+\makeatletter
+
+% 无上标的 \@makefnmark
+\def\nosuper@makefnmark{\hbox{\normalfont\@thefnmark\space}}
+
+% 补丁
+\patchcmd\@makefntext{\@makefnmark}{\nosuper@makefnmark}{}{}
+
+%% 不用 etoolbox 的另一种打临时热补丁的写法
+% \let\save@makefntext\@makefntext
+% \long\def\@makefntext#1{{%
+%   \let\@makefnmark\nosuper@makefnmark
+%   \save@makefntext{#1}}}
+
+% XeTeX 或 LuaTeX 下带圈数字 \thefootnote 的一种定义
+\usepackage{xunicode-addon}
+\newfontfamily\fnmarkfont{ipam.ttf}
+\renewcommand\thefootnote{{\fnmarkfont\textcircled{\arabic{footnote}}}}
+\makeatother
+
+\AtBeginEnvironment{quotation}{\kaishu}
+
+
+\usepackage{fancyhdr, geometry}
+
+\geometry{%
+  a4paper,
+  heightrounded,
+  % scale=0.7
+  % margin=0cm,
+  % marginparsep = 0.5cm,
+  % marginparwidth=1cm,
+  top = 3cm,
+  bottom = 3cm,
+  left = 2.6cm,
+  right = 2.6cm,
+  headheight = 6mm,
+  headsep = 5mm,
+  footskip = 6mm,
+  % outer = 2.5cm,
+  % inner = 2.5cm
+}
+
+% \pagestyle{headings}
+% \fancyhf{} % clear all header and footer fields
+% \lhead{}
+% \rhead{}
+% \chead{\slshape \zihao{5} \leftmark}
+\pagestyle{fancy}
+\fancyhead[LE,RO]{\slshape \zihao{5} \rightmark}
+\fancyhead[LO,RE]{\slshape \zihao{5} \leftmark}
+\fancyfoot[C]{\zihao{5} \thepage}
+\renewcommand{\headrulewidth}{0.75pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyheadoffset{0cm}
+
+\renewcommand{\bibfont}{\zihao{5}}
+\setlength\parskip{0em plus 4pt minus 2pt}
+
+% \usepackage{footnotebackref}  %bug
+\usepackage{hyperref}
+
+% for format of contents
+
+\usepackage{bookmark}
+\usepackage{booktabs}
+\usepackage{lscape}
+
+\usepackage{float} %允许浮动体强制在下方
+% 双栏排版
+% \usepackage{multicol}
+% 有时候, 浮动的边注在双面模式下会出现在错误的一侧, mparhack 可以修正该问题
+% \usepackage{mparhack}
+
+
+% for format of contents
+\usepackage{tocloft}
+\usepackage{tocbibind}
+% \renewcommand\cftsecleader{\cftdotfill{\cftdotsep}} % ctexart的目录中，section也加点。
+% \renewcommand*{\cftchapleader}{\cftdotfill{\cftdotsep}} % ctexbook中，chapter也加点。
+
+\renewcommand{\cfttoctitlefont}{\hfill\Large\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill} %使“目录”居中显示，将其中的toc改为lof
+                                %和lot，则会使浮动体列表和表格列表也居中显示
+
+% \renewcommand{\contentsname}{\hspace*{\fill}\bfseries\Large
+% 目录 \hspace*{\fill}}   % 不使用tocloft宏包时也适用的命令。
+
+% 设置目录中各级缩进
+\settowidth{\cftsecindent}{2em}
+\settowidth{\cftsubsecindent}{4em}
+% 设置目录中 chapter 章节编号的宽度 (ctex 章节编号为中文, 需要特别注意).
+% 参考 <<LaTeX 入门>>, 刘海洋 编著, 电子工业出版社, 2013.6
+% \settowidth\cftchapnumwidth{第十章} % 最宽的可能编号
+% \renewcommand\cftchapaftersnumb{\hspace{0.5em}} % 额外间距
+
+\usepackage{enumitem}
+\setenumerate[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
+\setitemize[1]{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
+\setdescription{itemsep=0pt,partopsep=0pt,parsep=\parskip,topsep=5pt}
+
+$if(verbatim-in-note)$
+\usepackage{fancyvrb}
+$endif$
+\hypersetup{
+$if(title-meta)$
+            pdftitle={$title-meta$},
+$endif$
+$if(author-meta)$
+            pdfauthor={$author-meta$},
+$endif$
+$if(keywords)$
+            pdfkeywords={$for(keywords)$$keywords$$sep$, $endfor$},
+$endif$
+$if(colorlinks)$
+            colorlinks=true,
+            linkcolor=$if(linkcolor)$$linkcolor$$else$Maroon$endif$,
+            citecolor=$if(citecolor)$$citecolor$$else$Blue$endif$,
+            urlcolor=$if(urlcolor)$$urlcolor$$else$Blue$endif$,
+$else$
+            pdfborder={0 0 0},
+$endif$
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+$if(verbatim-in-note)$
+\VerbatimFootnotes % allows verbatim text in footnotes
+$endif$
+$if(listings)$
+\usepackage{listings}
+$endif$
+$if(lhs)$
+\lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}
+$endif$
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+$if(tables)$
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{long table}}{}
+$endif$
+$if(links-as-notes)$
+% Make links footnotes instead of hotlinks:
+\renewcommand{\href}[2]{#2\footnote{\url{#1}}}
+$endif$
+$if(strikeout)$
+\usepackage[normalem]{ulem}
+% avoid problems with \sout in headers with hyperref:
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+$endif$
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+$if(title)$
+\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
+$endif$
+$if(subtitle)$
+\providecommand{\subtitle}[1]{}
+\subtitle{$subtitle$}
+$endif$
+$if(author)$
+\author{$for(author)$$author$$sep$ \and $endfor$}
+$endif$
+$if(institute)$
+\providecommand{\institute}[1]{}
+\institute{$for(institute)$$institute$$sep$ \and $endfor$}
+$endif$
+\date{$date$}
+
+\begin{document}
+$if(title)$
+\maketitle
+$endif$
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+
+$for(include-before)$
+$include-before$
+
+$endfor$
+$if(toc)$
+{
+$if(colorlinks)$
+\hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
+$endif$
+\setcounter{tocdepth}{$toc-depth$}
+\tableofcontents
+}
+$endif$
+$if(lot)$
+\listoftables
+$endif$
+$if(lof)$
+\listoffigures
+$endif$
+$body$
+
+$for(include-after)$
+$include-after$
+
+$endfor$
+
+\end{document}

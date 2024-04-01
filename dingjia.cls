@@ -22,7 +22,7 @@
   }%
 }
 
-\LoadClass[UTF8, a4paper, twoside, zihao =
+\LoadClass[UTF8, fontset = noto, a4paper, twoside, zihao =
 -4, scheme=chinese, heading = true]{ctexbook}
 
 \ctexset{%
@@ -73,12 +73,12 @@ footnoteleadingratio = 1.6]{zhlineskip}
 \RequirePackage{amsmath, % amssymb,
   xfrac}
 \RequirePackage[math-style=ISO, bold-style=ISO]{unicode-math} %注意，unicode-math与被其认为过时的bm包不兼容，不要\RequirePackage{bm}
-\setmathfont[Scale = 1.1]{Libertinus Math}  % 因Libertinus目前的数学字体暂还没
+\setmathfont[Scale = 1.1]{TeX Gyre Pagella Math}  % 因Libertinus目前的数学字体暂还没
 % 有粗体，这里设置为允许伪粗体渲染。
 
-\setmainfont[Scale=1.1, SlantedFont = {Libertinus Serif Italic}]{Libertinus Serif}
-\setsansfont{TeX Gyre Heros}
-\setmonofont[Scale=1]{Libertinus Mono}
+\setmainfont[Scale=1.1]{TeX Gyre Pagella}
+\setsansfont[Scale=1.1]{TeX Gyre Heros}
+\setmonofont{TeX Gyre Cursor}
 
 % \RequirePackage{microtype} % 改善单词、字母间距
 
@@ -203,7 +203,8 @@ footnoteleadingratio = 1.6]{zhlineskip}
   % round-mode=places,
   % round-precision=2,
   % round-integer-to-decimal=true,
-  per-mode=symbol,
+  % per-mode=symbol,
+  table-number-alignment=center,
   detect-all,
 }
 
@@ -277,12 +278,16 @@ footnoteleadingratio = 1.6]{zhlineskip}
 % \leftmargin 列表与左边距之间的水平距离，值为非负
 % \rightmargin 列表与右边距之间的水平距离，值为非负
 % \itemindent 每一 item 第一行的缩进
-% \listparindent 每一 item 第一行之后各行的缩进
+% \listparindent 每一 item各段首行的缩进
 % \labelsep 标签盒子与每一 item 第一行文本之间距离
 % \labelwidth 标签盒子的宽度；如果标签过长，这一宽度会自动变大，直到列表的第一行文本为止
-\setlist{leftmargin= \parindent, itemindent = \parindent, listparindent =
-  \parindent, %labelindent = \parindent,
-  parsep = 0ex, partopsep = 0ex, itemsep = 0.5em }
+% \setlist{leftmargin= \parindent, itemindent = \parindent, listparindent =
+%   \parindent, %labelindent = \parindent,
+%   parsep = 0ex, partopsep = 0ex, itemsep = 0.5em }
+
+\setlist{leftmargin= 0ex, itemindent = 1.7\parindent, listparindent =
+  \parindent, labelindent=\parindent, labelwidth=2em, parsep = 0ex,
+  partopsep = 0ex, itemsep = 0.5em }
 
 \setlist[description]{style=standard, font=\large\sffamily\bfseries}
 

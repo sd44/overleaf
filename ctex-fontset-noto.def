@@ -24,19 +24,18 @@
 %%
 %% The Current Maintainers of this work are sd44 <sd44sd44@yeah.net>.
 
-%% 本字体配置文件根据原ctex的字体配置文件修改，使用思源宋体、思源黑体、方正新楷体、方正粗楷、方正仿宋字体。
-%% 请确保以上字体已安装。其中的方正粗楷作为方正新楷体的粗体实现（楷体默认没有粗体）。
-%% 思源宋体和思源黑体我采用的是多语言OTF版本中的CN子集，也就是NotoSerifCJK和NotoSansCJK。
-%% 以上字体均可以酌情更换。
+%% 本字体配置文件根据原ctex的字体配置文件修改，使用思源宋体、思源黑体、方正
+%% 新楷体、方正粗楷、方正仿宋字体。请确保以上字体已安装。其中的方正粗楷作为
+%% 方正新楷体的粗体实现（楷体默认没有粗体）。思源宋体和思源黑体我采用的是
+%% NotoSerifCJK和NotoSansCJK版。以上字体均可以酌情更换。
 
-%% 注意：方正新楷体和方正粗楷可以在方正官网以普通个人用户身份以3元价格获得，
-%% 或以设计师身份免费获得GB2312字符集版本。但两种方式均为个人非商业使用。
+%% 注意：如果是个人非商用，方正新楷体和方正粗楷可以在方正官网免费获得。
 
 %% ------------------------------------------------------------------------------
 %%
 
-\GetIdInfo$Id: ctex.dtx 6471e87 2018-05-21 18:15:18 +0800 sd44 <sd44sd44@yeah.net $
-{Sourcesans fonts definition (CTEX)}
+\GetIdInfo$Id: ctex.dtx 6471e87 2024-03-31 18:15:18 +0800 sd44 <sd44sd44@yeah.net $
+{Noto fonts definition (CTEX)}
 \ProvidesExplFile{ctex-fontset-noto.def}
 {\ExplFileDate}{2.4.7}{\ExplFileDescription}
 \sys_if_engine_pdftex:TF
@@ -59,8 +58,8 @@
       \setCJKmonofont { FZFSK.TTF }
       \setCJKfamilyfont { zhsong }
       [
-      BoldFont = NotoSerifCJK-Bold.otf
-      ] {NotoSerifCJK-Regular.otf}
+      BoldFont = NotoSerifCJK-Bold.ttc
+      ] {NotoSerifCJK-Regular.ttc}
       \setCJKfamilyfont { zhhei } {NotoSansCJK-Regular.ttc}
       \setCJKfamilyfont { zhfs } {FZFSK.TTF}
       \setCJKfamilyfont { zhkai }
@@ -98,7 +97,7 @@
     \ctex_set_upfamily:nnn { zhkai } { upzhserifit } {}
   }
   {
-    \setCJKmainfont [ItalicFont = FZNewKai-Z03, BoldItalicFont=FZCuKaiS-R-GB]{ Noto~Serif~CJK~SC }
+    \setCJKmainfont [ItalicFont=FZNewKai-Z03, BoldItalicFont=FZCuKaiS-R-GB]{ Noto~Serif~CJK~SC }
     \setCJKsansfont [BoldFont=Noto~Sans~CJK~SC~Medium]{ Noto~Sans~CJK~SC }
     \setCJKmonofont { FZFangSong-Z02 }
     \setCJKfamilyfont { zhsong } { Noto~Serif~CJK~SC }

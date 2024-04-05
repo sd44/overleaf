@@ -99,10 +99,10 @@
   {
     \setCJKmainfont [ItalicFont=FZNewKai-Z03, BoldItalicFont=FZCuKaiS-R-GB]{ Noto~Serif~CJK~SC }
     \setCJKsansfont [BoldFont=Noto~Sans~CJK~SC~Medium]{ Noto~Sans~CJK~SC }
-    \setCJKmonofont { FZFangSong-Z02 }
+    \setCJKmonofont { FZFangSong-Z02S }
     \setCJKfamilyfont { zhsong } { Noto~Serif~CJK~SC }
     \setCJKfamilyfont { zhhei } [BoldFont=Noto~Sans~CJK~SC~Medium] { Noto~Sans~CJK~SC }
-    \setCJKfamilyfont { zhfs }  { FZFangSong-Z02 }
+    \setCJKfamilyfont { zhfs }  { FZFangSong-Z02S }
     \setCJKfamilyfont { zhkai } [BoldFont=FZCuKaiS-R-GB, BoldItalicFont=FZCuKaiS-R-GB]{ FZNewKai-Z03 }
   }
 }

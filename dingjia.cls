@@ -61,6 +61,8 @@
 %   \xeCJKsetup{CJKmath=true}
 %   \xeCJKsetup{xCJKecglue=true}
 % \fi
+
+\xeCJKsetup{CJKmath=true}
 \global\hyphenpenalty=5000
 \global\tolerance=1000
 
@@ -78,7 +80,8 @@ footnoteleadingratio = 1.6]{zhlineskip}
 
 \setmainfont[Scale=1.1]{TeX Gyre Pagella}
 \setsansfont[Scale=1.1]{TeX Gyre Heros}
-\setmonofont{TeX Gyre Cursor}
+\setmonofont{Noto Sans Mono Condensed}
+
 
 % \RequirePackage{microtype} % 改善单词、字母间距
 
@@ -92,6 +95,7 @@ footnoteleadingratio = 1.6]{zhlineskip}
   citecolor=magenta,
   linkcolor=blue,
   bookmarksnumbered = true,
+  bookmarksdepth = section,
   bookmarksopen = true,
   pdftitle = {梦园随笔——我的三观独白},
   pdfcreator = {sd44sd44@yeah.net},
@@ -198,14 +202,13 @@ footnoteleadingratio = 1.6]{zhlineskip}
 \RequirePackage{pdfpages, pdflscape}
 \RequirePackage{siunitx}
 \sisetup{
-  group-digits=false,
+  group-digits=none,
   tight-spacing=true,
   % round-mode=places,
   % round-precision=2,
   % round-integer-to-decimal=true,
   % per-mode=symbol,
   table-number-alignment=center,
-  detect-all,
 }
 
 \RequirePackage[usestackEOL]{stackengine}

@@ -1,4 +1,4 @@
-\begin{figure}[!ht]
+\begin{figure}[!p]
   \centering
 
   \begin{tikzpicture}[baseline]
@@ -30,11 +30,12 @@
       ymajorgrids,
       ]
       % \addplot+ [point meta=explicit symbolic, every node near coord/.append style={color=red}, nodes near coords,]
-      \addplot table [x=totalyear, y=total, col sep=comma] {realliangjia.csv};
+      \addplot table [x=totalyear, y=total, col sep=comma] {figures/econohistory/realliangjia.csv};
     \end{axis}
   \end{tikzpicture}
   \vspace{-14pt}
-  \caption{\label{fig:liangchanliang}1980--2017年粮食产量}
+  \caption{1980--2017年粮食产量}
+  \label{fig:liangchanliang}
   \capsource{资料来源：国家统计局，《中国统计摘要--2018）》}
   \bigskip\bigskip
 
@@ -66,11 +67,12 @@
       ymajorgrids,
       ]
       % \addplot+ [point meta=explicit symbolic, every node near coord/.append style={color=red}, nodes near coords,]
-      \addplot table [x=totalyear, y=totalpercent, col sep=comma] {realliangjia.csv};
+      \addplot table [x=totalyear, y=totalpercent, col sep=comma] {figures/econohistory/realliangjia.csv};
     \end{axis}
   \end{tikzpicture}
   \vspace{-14pt}
-  \caption{\label{fig:liangzengzhang}1980--2017年粮食产量增长率（较上一年）}
+  \caption{1980--2017年粮食产量增长率（较上一年）}
+  \label{fig:liangzengzhang}
   \capsource{资料来源：国家统计局，《中国统计摘要--2018）》}
   \bigskip \bigskip
 
@@ -103,10 +105,11 @@
       ymajorgrids,
       ]
       % \addplot+ [point meta=explicit symbolic, every node near coord/.append style={color=red}, nodes near coords,]
-      \addplot table [x=x, y=y, col sep=comma] {realliangjia.csv};
+      \addplot table [x=x, y=y, col sep=comma] {figures/econohistory/realliangjia.csv};
     \end{axis}
   \end{tikzpicture}
   \vspace{-14pt}
-  \caption{\label{fig:liangjia}1980--1998年粮食市场真实价格（1978年不变价格）}
+  \caption{1980--1998年粮食市场真实价格（1978年不变价格）}
+  \label{fig:liangjia}
   \capsource{资料来源：卢锋，《三次粮食过剩（1984--1998）》}
 \end{figure}

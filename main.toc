@@ -1,0 +1,99 @@
+\contentsline {chapter}{目录}{ii}{section*.2}%
+\contentsline {chapter}{序言}{vii}{chapter*.3}%
+\contentsline {part}{第一部分\hspace {1em}空间生产}{1}{part.1}%
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}济南市丁家庄城中村照片集}{3}{chapter.1}%
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}城中村的简单概念}{19}{chapter.2}%
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}济南市丁家庄城中村见闻散记}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}背景介绍}{21}{section.3.1}%
+\contentsline {section}{\numberline {3.2}初见}{21}{section.3.2}%
+\contentsline {section}{\numberline {3.3}黑夜与清晨}{22}{section.3.3}%
+\contentsline {section}{\numberline {3.4}医疗保健和社会保障}{23}{section.3.4}%
+\contentsline {section}{\numberline {3.5}何不食肉糜}{23}{section.3.5}%
+\contentsline {section}{\numberline {3.6}过往的宅田基地之殇}{24}{section.3.6}%
+\contentsline {part}{第二部分\hspace {1em}人文}{27}{part.2}%
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}生命}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}关于无国界医生的一场争议}{29}{section.4.1}%
+\contentsline {section}{\numberline {4.2}“科学”的优生学绝育论}{30}{section.4.2}%
+\contentsline {section}{\numberline {4.3}被漠然视之的生命权}{31}{section.4.3}%
+\contentsline {section}{\numberline {4.4}20世纪的战争}{32}{section.4.4}%
+\contentsline {section}{\numberline {4.5}人相食}{33}{section.4.5}%
+\contentsline {chapter}{\numberline {第五章\hspace {.3em}}草稿之一——工作制}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}传统超时加班企业}{35}{section.5.1}%
+\contentsline {section}{\numberline {5.2}新型超时加班企业}{35}{section.5.2}%
+\contentsline {section}{\numberline {5.3}工作时长立法}{37}{section.5.3}%
+\contentsline {section}{\numberline {5.4}超时加班的危害和原理}{37}{section.5.4}%
+\contentsline {section}{\numberline {5.5}工时改革问题的民族国家与全球化困局}{39}{section.5.5}%
+\contentsline {part}{第三部分\hspace {1em}国际}{43}{part.3}%
+\contentsline {chapter}{\numberline {第六章\hspace {.3em}}新自由主义札记}{45}{chapter.6}%
+\contentsline {section}{\numberline {6.1}新自由主义的概念}{45}{section.6.1}%
+\contentsline {section}{\numberline {6.2}哈维对新自由主义实践的具体批判}{46}{section.6.2}%
+\contentsline {section}{\numberline {6.3}新自由主义的实质}{48}{section.6.3}%
+\contentsline {section}{\numberline {6.4}联合国债务与人权独立专家报告}{49}{section.6.4}%
+\contentsline {chapter}{\numberline {第七章\hspace {.3em}}维基解密、阿桑奇与西方政治}{59}{chapter.7}%
+\contentsline {section}{\numberline {7.1}维基解密简述}{59}{section.7.1}%
+\contentsline {section}{\numberline {7.2}希拉里邮件门事件}{59}{section.7.2}%
+\contentsline {section}{\numberline {7.3}维基解密的理念}{61}{section.7.3}%
+\contentsline {section}{\numberline {7.4}维基解密的缺陷及问题}{62}{section.7.4}%
+\contentsline {section}{\numberline {7.5}希拉里邮件门之后}{63}{section.7.5}%
+\contentsline {chapter}{\numberline {第八章\hspace {.3em}}中早期苏俄科社实践}{65}{chapter.8}%
+\contentsline {section}{\numberline {8.1}序言}{65}{section.8.1}%
+\contentsline {section}{\numberline {8.2}马克思“科学社会主义”的缺陷}{66}{section.8.2}%
+\contentsline {section}{\numberline {8.3}杜冈-巴拉诺夫斯基对苏俄的影响}{68}{section.8.3}%
+\contentsline {section}{\numberline {8.4}二十世纪初至十月革命的俄国}{70}{section.8.4}%
+\contentsline {section}{\numberline {8.5}十月革命之后到新经济政策}{72}{section.8.5}%
+\contentsline {section}{\numberline {8.6}新经济政策时期的争论}{75}{section.8.6}%
+\contentsline {section}{\numberline {8.7}斯大林模式}{78}{section.8.7}%
+\contentsline {section}{\numberline {8.8}早中期苏联社会主义性质的总结}{81}{section.8.8}%
+\contentsline {subsection}{\numberline {8.8.1}苏联领导人对历史唯物主义的深刻认识}{81}{subsection.8.8.1}%
+\contentsline {subsection}{\numberline {8.8.2}苏联领导人对历史唯物主义的背离}{84}{subsection.8.8.2}%
+\contentsline {part}{第四部分\hspace {1em}关于中国}{87}{part.4}%
+\contentsline {chapter}{\numberline {第九章\hspace {.3em}}前言}{89}{chapter.9}%
+\contentsline {section}{\numberline {9.1}百年未有之大变局}{89}{section.9.1}%
+\contentsline {section}{\numberline {9.2}本篇立意}{90}{section.9.2}%
+\contentsline {chapter}{\numberline {第十章\hspace {.3em}}计划经济时期 1949--1978年}{93}{chapter.10}%
+\contentsline {section}{\numberline {10.1}社会主义过渡时期 1949--1956年}{93}{section.10.1}%
+\contentsline {section}{\numberline {10.2}红色社会主义社会时期 1957--1978年}{95}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}赫鲁晓夫的秘密报告}{96}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}整风到反右派}{96}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}浮夸风、命令风、共产风、生产瞎指挥风、干部特权风}{97}{subsection.10.2.3}%
+\contentsline {subsection}{\numberline {10.2.4}大跃进中后期的安徽省}{100}{subsection.10.2.4}%
+\contentsline {subsection}{\numberline {10.2.5}对“大跃进”的补救措施及反思}{103}{subsection.10.2.5}%
+\contentsline {subsection}{\numberline {10.2.6}继续阶级斗争}{105}{subsection.10.2.6}%
+\contentsline {subsection}{\numberline {10.2.7}笔者个人总结}{105}{subsection.10.2.7}%
+\contentsline {chapter}{\numberline {第十一章\hspace {.3em}}市场经济过渡时期1978--1992}{109}{chapter.11}%
+\contentsline {section}{\numberline {11.1}时代背景}{109}{section.11.1}%
+\contentsline {section}{\numberline {11.2}整体意识形态转变}{109}{section.11.2}%
+\contentsline {section}{\numberline {11.3}领导制度改革}{113}{section.11.3}%
+\contentsline {section}{\numberline {11.4}计划经济与市场经济的分歧}{115}{section.11.4}%
+\contentsline {section}{\numberline {11.5}农业改革}{117}{section.11.5}%
+\contentsline {subsection}{\numberline {11.5.1}包干到户、村社分设}{117}{subsection.11.5.1}%
+\contentsline {subsection}{\numberline {11.5.2}合同定购制、农业价格双轨制}{119}{subsection.11.5.2}%
+\contentsline {section}{\numberline {11.6}城市改革}{124}{section.11.6}%
+\contentsline {section}{\numberline {11.7}企业改革}{125}{section.11.7}%
+\contentsline {subsection}{\numberline {11.7.1}雇工及企业性质}{125}{subsection.11.7.1}%
+\contentsline {subsection}{\numberline {11.7.2}乡镇企业}{127}{subsection.11.7.2}%
+\contentsline {subsection}{\numberline {11.7.3}就业制度改革}{129}{subsection.11.7.3}%
+\contentsline {subsection}{\numberline {11.7.4}扩大企业经营管理自主权和增强企业活力}{129}{subsection.11.7.4}%
+\contentsline {subsection}{\numberline {11.7.5}价格双轨制和价格闯关}{131}{subsection.11.7.5}%
+\contentsline {section}{\numberline {11.8}金融改革}{135}{section.11.8}%
+\contentsline {subsection}{\numberline {11.8.1}现代化银行}{135}{subsection.11.8.1}%
+\contentsline {subsection}{\numberline {11.8.2}汇率双轨制}{136}{subsection.11.8.2}%
+\contentsline {section}{\numberline {11.9}财政改革}{138}{section.11.9}%
+\contentsline {subsection}{\numberline {11.9.1}财政体制改革的深层逻辑}{138}{subsection.11.9.1}%
+\contentsline {subsection}{\numberline {11.9.2}税制改革、利改税}{139}{subsection.11.9.2}%
+\contentsline {subsection}{\numberline {11.9.3}拨改贷}{140}{subsection.11.9.3}%
+\contentsline {section}{\numberline {11.10}权力寻租、官倒和腐败}{142}{section.11.10}%
+\contentsline {subsection}{\numberline {11.10.1}历史政策}{142}{subsection.11.10.1}%
+\contentsline {chapter}{\numberline {第十二章\hspace {.3em}}市场经济体制时期 1992--}{143}{chapter.12}%
+\contentsline {section}{\numberline {12.1}农业改革}{143}{section.12.1}%
+\contentsline {subsection}{\numberline {12.1.1}粮食并轨}{143}{subsection.12.1.1}%
+\contentsline {subsection}{\numberline {12.1.2}重回粮食双轨制}{146}{subsection.12.1.2}%
+\contentsline {subsection}{\numberline {12.1.3}混沌双轨制}{147}{subsection.12.1.3}%
+\contentsline {subsection}{\numberline {12.1.4}有限制的市场化改革}{153}{subsection.12.1.4}%
+\contentsline {section}{\numberline {12.2}分税制}{154}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}分税制历史资料简单汇总}{154}{subsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.2.2}关于分税制的部分后果}{157}{subsection.12.2.2}%
+\contentsline {subsubsection}{分税制的缺点}{158}{subsubsection*.25}%
+\contentsline {subsubsection}{分税制的优点}{160}{subsubsection*.26}%
+\contentsline {section}{\numberline {12.3}汇率并轨}{161}{section.12.3}%
+\contentsline {part}{参考文献}{163}{chapter*.27}%

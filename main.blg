@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[121] biber:340> INFO - === 五 4月  5, 2024, 12:52:35
+[178] Biber.pm:419> INFO - Reading 'main.bcf'
+[333] Biber.pm:979> INFO - Found 92 citekeys in bib section 0
+[355] Biber.pm:4419> INFO - Processing section 0
+[404] Biber.pm:4610> INFO - Looking for bibtex file 'ref/refs.bib' for section 0
+[409] bibtex.pm:1713> INFO - LaTeX decoding ...
+[566] bibtex.pm:1519> INFO - Found BibTeX data source 'ref/refs.bib'
+[3812] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[3812] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[3812] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[3813] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[6060] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[7623] bbl.pm:763> INFO - Output to main.bbl

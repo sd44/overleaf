@@ -97,7 +97,7 @@
     \ctex_set_upfamily:nnn { zhkai } { upzhserifit } {}
   }
   {
-    \setCJKmainfont [ItalicFont=FZNewKai-Z03, BoldItalicFont=FZCuKaiS-R-GB]{ Noto~Serif~CJK~SC }
+    \setCJKmainfont { Noto~Serif~CJK~SC }
     \setCJKsansfont [BoldFont=Noto~Sans~CJK~SC~Medium]{ Noto~Sans~CJK~SC }
     \setCJKmonofont { FZFangSong-Z02 }
     \setCJKfamilyfont { zhsong } { Noto~Serif~CJK~SC }
